@@ -1,0 +1,1228 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 19 22:57:40 2022
+| Host         : LAPTOP-FQQN0PPL running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -name timing_1224 -file C:/Users/surface/Desktop/E/timing_report_1224.txt
+| Design       : Mult_8x8_e_1224
+| Device       : 7vx980t-ffg1930
+| Speed File   : -2L  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      4.172        0.000                      0                   16        1.814        0.000                      0                   16           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+a      {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+a                   4.172        0.000                      0                   16        1.814        0.000                      0                   16                                                                          
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  a
+  To Clock:  a
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.172ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.814ns,  Total Violation        0.000ns
+PW    :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.172ns  (required time - arrival time)
+  Source:                 A[7]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[13]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.803ns  (logic 3.782ns (65.176%)  route 2.021ns (34.824%))
+  Logic Levels:           9  (CARRY4=3 IBUF=1 LUT5=3 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[7] (IN)
+                         net (fo=0)                   0.000     0.000    A[7]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[7]_inst/O
+                         net (fo=16, unplaced)        0.466     1.135    M2/LUT6_inst8/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst8/LUT5/O
+                         net (fo=4, unplaced)         0.431     1.617    M2/LUT6_2_inst11/I1
+                         LUT5 (Prop_lut5_I1_O)        0.050     1.667 r  M2/LUT6_2_inst11/LUT5/O
+                         net (fo=1, unplaced)         0.000     1.667    M2/Gen2
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.238     1.905 r  M2/CARRY4_inst/O[3]
+                         net (fo=2, unplaced)         0.339     2.244    adder0/genPG[6].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.127     2.371 r  adder0/genPG[6].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.689    adder0/genPG[7].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.132     2.821 r  adder0/genPG[7].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.821    adder0/genPG[7].PGi__0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180     3.001 r  adder0/genCC[1].CCi/CO[3]
+                         net (fo=1, unplaced)         0.000     3.001    adder0/CI
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.173     3.174 r  adder0/CCN/O[1]
+                         net (fo=1, unplaced)         0.466     3.640    R_OBUF[13]
+                         OBUF (Prop_obuf_I_O)         2.163     5.803 r  R_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     5.803    R[13]
+                                                                      r  R[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.803    
+  -------------------------------------------------------------------
+                         slack                                  4.172    
+
+Slack (MET) :             4.191ns  (required time - arrival time)
+  Source:                 A[7]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[15]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.784ns  (logic 3.763ns (65.062%)  route 2.021ns (34.938%))
+  Logic Levels:           9  (CARRY4=3 IBUF=1 LUT5=3 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[7] (IN)
+                         net (fo=0)                   0.000     0.000    A[7]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[7]_inst/O
+                         net (fo=16, unplaced)        0.466     1.135    M2/LUT6_inst8/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst8/LUT5/O
+                         net (fo=4, unplaced)         0.431     1.617    M2/LUT6_2_inst11/I1
+                         LUT5 (Prop_lut5_I1_O)        0.050     1.667 r  M2/LUT6_2_inst11/LUT5/O
+                         net (fo=1, unplaced)         0.000     1.667    M2/Gen2
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.238     1.905 r  M2/CARRY4_inst/O[3]
+                         net (fo=2, unplaced)         0.339     2.244    adder0/genPG[6].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.127     2.371 r  adder0/genPG[6].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.689    adder0/genPG[7].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.132     2.821 r  adder0/genPG[7].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.821    adder0/genPG[7].PGi__0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180     3.001 r  adder0/genCC[1].CCi/CO[3]
+                         net (fo=1, unplaced)         0.000     3.001    adder0/CI
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.157     3.158 r  adder0/CCN/O[3]
+                         net (fo=1, unplaced)         0.466     3.624    R_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.160     5.784 r  R_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     5.784    R[15]
+                                                                      r  R[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.784    
+  -------------------------------------------------------------------
+                         slack                                  4.191    
+
+Slack (MET) :             4.226ns  (required time - arrival time)
+  Source:                 A[7]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[14]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.749ns  (logic 3.728ns (64.849%)  route 2.021ns (35.151%))
+  Logic Levels:           9  (CARRY4=3 IBUF=1 LUT5=3 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[7] (IN)
+                         net (fo=0)                   0.000     0.000    A[7]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[7]_inst/O
+                         net (fo=16, unplaced)        0.466     1.135    M2/LUT6_inst8/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst8/LUT5/O
+                         net (fo=4, unplaced)         0.431     1.617    M2/LUT6_2_inst11/I1
+                         LUT5 (Prop_lut5_I1_O)        0.050     1.667 r  M2/LUT6_2_inst11/LUT5/O
+                         net (fo=1, unplaced)         0.000     1.667    M2/Gen2
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.238     1.905 r  M2/CARRY4_inst/O[3]
+                         net (fo=2, unplaced)         0.339     2.244    adder0/genPG[6].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.127     2.371 r  adder0/genPG[6].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.689    adder0/genPG[7].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.132     2.821 r  adder0/genPG[7].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.821    adder0/genPG[7].PGi__0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180     3.001 r  adder0/genCC[1].CCi/CO[3]
+                         net (fo=1, unplaced)         0.000     3.001    adder0/CI
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.120     3.121 r  adder0/CCN/O[2]
+                         net (fo=1, unplaced)         0.466     3.587    R_OBUF[14]
+                         OBUF (Prop_obuf_I_O)         2.162     5.749 r  R_OBUF[14]_inst/O
+                         net (fo=0)                   0.000     5.749    R[14]
+                                                                      r  R[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.749    
+  -------------------------------------------------------------------
+                         slack                                  4.226    
+
+Slack (MET) :             4.230ns  (required time - arrival time)
+  Source:                 A[7]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[12]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.745ns  (logic 3.724ns (64.825%)  route 2.021ns (35.175%))
+  Logic Levels:           9  (CARRY4=3 IBUF=1 LUT5=3 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[7] (IN)
+                         net (fo=0)                   0.000     0.000    A[7]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[7]_inst/O
+                         net (fo=16, unplaced)        0.466     1.135    M2/LUT6_inst8/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst8/LUT5/O
+                         net (fo=4, unplaced)         0.431     1.617    M2/LUT6_2_inst11/I1
+                         LUT5 (Prop_lut5_I1_O)        0.050     1.667 r  M2/LUT6_2_inst11/LUT5/O
+                         net (fo=1, unplaced)         0.000     1.667    M2/Gen2
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.238     1.905 r  M2/CARRY4_inst/O[3]
+                         net (fo=2, unplaced)         0.339     2.244    adder0/genPG[6].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.127     2.371 r  adder0/genPG[6].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.689    adder0/genPG[7].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.132     2.821 r  adder0/genPG[7].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.821    adder0/genPG[7].PGi__0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180     3.001 r  adder0/genCC[1].CCi/CO[3]
+                         net (fo=1, unplaced)         0.000     3.001    adder0/CI
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.114     3.115 r  adder0/CCN/O[0]
+                         net (fo=1, unplaced)         0.466     3.581    R_OBUF[12]
+                         OBUF (Prop_obuf_I_O)         2.164     5.745 r  R_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     5.745    R[12]
+                                                                      r  R[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.745    
+  -------------------------------------------------------------------
+                         slack                                  4.230    
+
+Slack (MET) :             4.412ns  (required time - arrival time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[11]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.563ns  (logic 3.593ns (64.591%)  route 1.970ns (35.409%))
+  Logic Levels:           7  (CARRY4=2 IBUF=1 LUT5=2 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.466     1.135    M2/LUT6_inst5/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst5/LUT5/O
+                         net (fo=2, unplaced)         0.281     1.467    M2/LUT6_2_inst6/I2
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.510 r  M2/LUT6_2_inst6/LUT6/O
+                         net (fo=1, unplaced)         0.000     1.510    M2/Prop0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     1.630 r  M2/CARRY4_inst/O[0]
+                         net (fo=2, unplaced)         0.438     2.068    adder0/genPG[3].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.131     2.199 r  adder0/genPG[3].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.517    adder0/g_4
+                         CARRY4 (Prop_carry4_DI[0]_O[3])
+                                                      0.420     2.937 r  adder0/genCC[1].CCi/O[3]
+                         net (fo=1, unplaced)         0.466     3.403    R_OBUF[11]
+                         OBUF (Prop_obuf_I_O)         2.160     5.563 r  R_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     5.563    R[11]
+                                                                      r  R[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.563    
+  -------------------------------------------------------------------
+                         slack                                  4.412    
+
+Slack (MET) :             4.445ns  (required time - arrival time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[10]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.530ns  (logic 3.560ns (64.379%)  route 1.970ns (35.621%))
+  Logic Levels:           7  (CARRY4=2 IBUF=1 LUT5=2 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.466     1.135    M2/LUT6_inst5/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst5/LUT5/O
+                         net (fo=2, unplaced)         0.281     1.467    M2/LUT6_2_inst6/I2
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.510 r  M2/LUT6_2_inst6/LUT6/O
+                         net (fo=1, unplaced)         0.000     1.510    M2/Prop0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     1.630 r  M2/CARRY4_inst/O[0]
+                         net (fo=2, unplaced)         0.438     2.068    adder0/genPG[3].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.131     2.199 r  adder0/genPG[3].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.318     2.517    adder0/g_4
+                         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.385     2.902 r  adder0/genCC[1].CCi/O[2]
+                         net (fo=1, unplaced)         0.466     3.368    R_OBUF[10]
+                         OBUF (Prop_obuf_I_O)         2.162     5.530 r  R_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     5.530    R[10]
+                                                                      r  R[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.530    
+  -------------------------------------------------------------------
+                         slack                                  4.445    
+
+Slack (MET) :             4.489ns  (required time - arrival time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[9]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.486ns  (logic 3.527ns (64.294%)  route 1.959ns (35.706%))
+  Logic Levels:           8  (CARRY4=2 IBUF=1 LUT5=2 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.466     1.135    M2/LUT6_inst5/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst5/LUT5/O
+                         net (fo=2, unplaced)         0.281     1.467    M2/LUT6_2_inst6/I2
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.510 r  M2/LUT6_2_inst6/LUT6/O
+                         net (fo=1, unplaced)         0.000     1.510    M2/Prop0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     1.630 r  M2/CARRY4_inst/O[0]
+                         net (fo=2, unplaced)         0.438     2.068    adder0/genPG[3].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.131     2.199 r  adder0/genPG[3].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.307     2.506    adder0/genPG[4].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.134     2.640 r  adder0/genPG[4].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.640    adder0/genPG[4].PGi__0
+                         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.217     2.857 r  adder0/genCC[1].CCi/O[1]
+                         net (fo=1, unplaced)         0.466     3.323    R_OBUF[9]
+                         OBUF (Prop_obuf_I_O)         2.163     5.486 r  R_OBUF[9]_inst/O
+                         net (fo=0)                   0.000     5.486    R[9]
+                                                                      r  R[9] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.486    
+  -------------------------------------------------------------------
+                         slack                                  4.489    
+
+Slack (MET) :             4.585ns  (required time - arrival time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[8]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        5.390ns  (logic 3.431ns (63.658%)  route 1.959ns (36.342%))
+  Logic Levels:           8  (CARRY4=2 IBUF=1 LUT5=2 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.466     1.135    M2/LUT6_inst5/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst5/LUT5/O
+                         net (fo=2, unplaced)         0.281     1.467    M2/LUT6_2_inst6/I2
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.510 r  M2/LUT6_2_inst6/LUT6/O
+                         net (fo=1, unplaced)         0.000     1.510    M2/Prop0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     1.630 r  M2/CARRY4_inst/O[0]
+                         net (fo=2, unplaced)         0.438     2.068    adder0/genPG[3].PGi/I0
+                         LUT5 (Prop_lut5_I0_O)        0.131     2.199 r  adder0/genPG[3].PGi/LUT5/O
+                         net (fo=3, unplaced)         0.307     2.506    adder0/genPG[4].PGi/I3
+                         LUT6 (Prop_lut6_I3_O)        0.134     2.640 r  adder0/genPG[4].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.640    adder0/genPG[4].PGi__0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     2.760 r  adder0/genCC[1].CCi/O[0]
+                         net (fo=1, unplaced)         0.466     3.226    R_OBUF[8]
+                         OBUF (Prop_obuf_I_O)         2.164     5.390 r  R_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     5.390    R[8]
+                                                                      r  R[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -5.390    
+  -------------------------------------------------------------------
+                         slack                                  4.585    
+
+Slack (MET) :             5.044ns  (required time - arrival time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[7]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        4.931ns  (logic 3.279ns (66.501%)  route 1.652ns (33.499%))
+  Logic Levels:           7  (CARRY4=2 IBUF=1 LUT5=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.466     1.135    M2/LUT6_inst5/I3
+                         LUT5 (Prop_lut5_I3_O)        0.051     1.186 r  M2/LUT6_inst5/LUT5/O
+                         net (fo=2, unplaced)         0.281     1.467    M2/LUT6_2_inst6/I2
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.510 r  M2/LUT6_2_inst6/LUT6/O
+                         net (fo=1, unplaced)         0.000     1.510    M2/Prop0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.120     1.630 r  M2/CARRY4_inst/O[0]
+                         net (fo=2, unplaced)         0.438     2.068    adder0/genPG[3].PGi/I0
+                         LUT6 (Prop_lut6_I0_O)        0.123     2.191 r  adder0/genPG[3].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     2.191    adder0/genPG[3].PGi__0
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.114     2.305 r  adder0/genCC[0].CCi/O[3]
+                         net (fo=1, unplaced)         0.466     2.771    R_OBUF[7]
+                         OBUF (Prop_obuf_I_O)         2.160     4.931 r  R_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     4.931    R[7]
+                                                                      r  R[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -4.931    
+  -------------------------------------------------------------------
+                         slack                                  5.044    
+
+Slack (MET) :             5.092ns  (required time - arrival time)
+  Source:                 B[0]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[6]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (a rise@10.000ns - a rise@0.000ns)
+  Data Path Delay:        4.883ns  (logic 3.297ns (67.523%)  route 1.586ns (32.476%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  B[0] (IN)
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.669     0.669 r  B_IBUF[0]_inst/O
+                         net (fo=12, unplaced)        0.466     1.135    M2/LUT6_2_inst0/I2
+                         LUT5 (Prop_lut5_I2_O)        0.051     1.186 r  M2/LUT6_2_inst0/LUT5/O
+                         net (fo=2, unplaced)         0.418     1.604    adder0/PG0/I0
+                         LUT5 (Prop_lut5_I0_O)        0.051     1.655 r  adder0/PG0/LUT5/O
+                         net (fo=3, unplaced)         0.235     1.890    adder0/g_1
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.365     2.255 r  adder0/genCC[0].CCi/O[2]
+                         net (fo=1, unplaced)         0.466     2.721    R_OBUF[6]
+                         OBUF (Prop_obuf_I_O)         2.162     4.883 r  R_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     4.883    R[6]
+                                                                      r  R[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)         10.000    10.000 r  
+                         ideal clock network latency
+                                                      0.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         clock uncertainty           -0.025     9.975    
+                         output delay                -0.000     9.975    
+  -------------------------------------------------------------------
+                         required time                          9.975    
+                         arrival time                          -4.883    
+  -------------------------------------------------------------------
+                         slack                                  5.092    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.814ns  (arrival time - required time)
+  Source:                 B[0]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[0]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        1.839ns  (logic 1.377ns (74.849%)  route 0.463ns (25.151%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  B[0] (IN)
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  B_IBUF[0]_inst/O
+                         net (fo=12, unplaced)        0.231     0.406    M0/LUT6_2_inst0/I2
+                         LUT5 (Prop_lut5_I2_O)        0.027     0.433 r  M0/LUT6_2_inst0/LUT5/O
+                         net (fo=1, unplaced)         0.231     0.664    R_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         1.175     1.839 r  R_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     1.839    R[0]
+                                                                      r  R[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           1.839    
+  -------------------------------------------------------------------
+                         slack                                  1.814    
+
+Slack (MET) :             1.815ns  (arrival time - required time)
+  Source:                 A[1]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[1]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        1.840ns  (logic 1.378ns (74.863%)  route 0.463ns (25.137%))
+  Logic Levels:           3  (IBUF=1 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.000     0.000    A[1]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[1]_inst/O
+                         net (fo=20, unplaced)        0.231     0.406    M0/LUT6_2_inst0/I3
+                         LUT6 (Prop_lut6_I3_O)        0.028     0.434 r  M0/LUT6_2_inst0/LUT6/O
+                         net (fo=1, unplaced)         0.231     0.665    R_OBUF[1]
+                         OBUF (Prop_obuf_I_O)         1.175     1.840 r  R_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     1.840    R[1]
+                                                                      r  R[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           1.840    
+  -------------------------------------------------------------------
+                         slack                                  1.815    
+
+Slack (MET) :             1.815ns  (arrival time - required time)
+  Source:                 A[2]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[2]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        1.840ns  (logic 1.378ns (74.863%)  route 0.463ns (25.137%))
+  Logic Levels:           3  (IBUF=1 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[2]_inst/O
+                         net (fo=15, unplaced)        0.231     0.406    M0/LUT6_2_inst2/I5
+                         LUT6 (Prop_lut6_I5_O)        0.028     0.434 r  M0/LUT6_2_inst2/LUT6/O
+                         net (fo=1, unplaced)         0.231     0.665    R_OBUF[2]
+                         OBUF (Prop_obuf_I_O)         1.175     1.840 r  R_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     1.840    R[2]
+                                                                      r  R[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           1.840    
+  -------------------------------------------------------------------
+                         slack                                  1.815    
+
+Slack (MET) :             1.815ns  (arrival time - required time)
+  Source:                 A[2]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[3]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        1.840ns  (logic 1.378ns (74.863%)  route 0.463ns (25.137%))
+  Logic Levels:           3  (IBUF=1 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[2]_inst/O
+                         net (fo=15, unplaced)        0.231     0.406    M0/LUT6_2_inst4/I5
+                         LUT6 (Prop_lut6_I5_O)        0.028     0.434 r  M0/LUT6_2_inst4/LUT6/O
+                         net (fo=1, unplaced)         0.231     0.665    R_OBUF[3]
+                         OBUF (Prop_obuf_I_O)         1.175     1.840 r  R_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     1.840    R[3]
+                                                                      r  R[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           1.840    
+  -------------------------------------------------------------------
+                         slack                                  1.815    
+
+Slack (MET) :             2.054ns  (arrival time - required time)
+  Source:                 A[3]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[5]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.079ns  (logic 1.491ns (71.711%)  route 0.588ns (28.289%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[3] (IN)
+                         net (fo=0)                   0.000     0.000    A[3]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[3]_inst/O
+                         net (fo=13, unplaced)        0.231     0.406    M0/LUT6_2_inst7/I5
+                         LUT6 (Prop_lut6_I5_O)        0.028     0.434 r  M0/LUT6_2_inst7/LUT6/O
+                         net (fo=2, unplaced)         0.125     0.560    adder0/genPG[1].PGi/I2
+                         LUT6 (Prop_lut6_I2_O)        0.028     0.588 r  adder0/genPG[1].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.588    adder0/genPG[1].PGi__0
+                         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.047     0.635 r  adder0/genCC[0].CCi/O[1]
+                         net (fo=1, unplaced)         0.231     0.866    R_OBUF[5]
+                         OBUF (Prop_obuf_I_O)         1.213     2.079 r  R_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     2.079    R[5]
+                                                                      r  R[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.079    
+  -------------------------------------------------------------------
+                         slack                                  2.054    
+
+Slack (MET) :             2.055ns  (arrival time - required time)
+  Source:                 A[2]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[6]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.080ns  (logic 1.492ns (71.725%)  route 0.588ns (28.275%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 f  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 f  A_IBUF[2]_inst/O
+                         net (fo=15, unplaced)        0.231     0.406    M0/LUT6_2_inst8/I3
+                         LUT6 (Prop_lut6_I3_O)        0.028     0.434 r  M0/LUT6_2_inst8/LUT6/O
+                         net (fo=2, unplaced)         0.125     0.560    adder0/genPG[2].PGi/I2
+                         LUT6 (Prop_lut6_I2_O)        0.028     0.588 r  adder0/genPG[2].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.588    adder0/genPG[2].PGi__0
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.047     0.635 r  adder0/genCC[0].CCi/O[2]
+                         net (fo=1, unplaced)         0.231     0.866    R_OBUF[6]
+                         OBUF (Prop_obuf_I_O)         1.214     2.080 r  R_OBUF[6]_inst/O
+                         net (fo=0)                   0.000     2.080    R[6]
+                                                                      r  R[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.080    
+  -------------------------------------------------------------------
+                         slack                                  2.055    
+
+Slack (MET) :             2.056ns  (arrival time - required time)
+  Source:                 B[4]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[4]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.081ns  (logic 1.493ns (71.738%)  route 0.588ns (28.262%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  B[4] (IN)
+                         net (fo=0)                   0.000     0.000    B[4]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  B_IBUF[4]_inst/O
+                         net (fo=18, unplaced)        0.231     0.406    M1/LUT6_2_inst0/I2
+                         LUT5 (Prop_lut5_I2_O)        0.027     0.433 r  M1/LUT6_2_inst0/LUT5/O
+                         net (fo=2, unplaced)         0.125     0.559    adder0/PG0/I1
+                         LUT6 (Prop_lut6_I1_O)        0.028     0.587 r  adder0/PG0/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.587    adder0/PG0_n_1
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.050     0.637 r  adder0/genCC[0].CCi/O[0]
+                         net (fo=1, unplaced)         0.231     0.868    R_OBUF[4]
+                         OBUF (Prop_obuf_I_O)         1.213     2.081 r  R_OBUF[4]_inst/O
+                         net (fo=0)                   0.000     2.081    R[4]
+                                                                      r  R[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.081    
+  -------------------------------------------------------------------
+                         slack                                  2.056    
+
+Slack (MET) :             2.082ns  (arrival time - required time)
+  Source:                 A[2]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[7]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.107ns  (logic 1.519ns (72.087%)  route 0.588ns (27.913%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 f  A[2] (IN)
+                         net (fo=0)                   0.000     0.000    A[2]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 f  A_IBUF[2]_inst/O
+                         net (fo=15, unplaced)        0.231     0.406    M0/LUT6_2_inst8/I3
+                         LUT6 (Prop_lut6_I3_O)        0.028     0.434 r  M0/LUT6_2_inst8/LUT6/O
+                         net (fo=2, unplaced)         0.125     0.560    adder0/genPG[2].PGi/I2
+                         LUT6 (Prop_lut6_I2_O)        0.028     0.588 r  adder0/genPG[2].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.588    adder0/genPG[2].PGi__0
+                         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.073     0.661 r  adder0/genCC[0].CCi/O[3]
+                         net (fo=1, unplaced)         0.231     0.892    R_OBUF[7]
+                         OBUF (Prop_obuf_I_O)         1.215     2.107 r  R_OBUF[7]_inst/O
+                         net (fo=0)                   0.000     2.107    R[7]
+                                                                      r  R[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.107    
+  -------------------------------------------------------------------
+                         slack                                  2.082    
+
+Slack (MET) :             2.112ns  (arrival time - required time)
+  Source:                 A[5]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[9]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.137ns  (logic 1.491ns (69.764%)  route 0.646ns (30.236%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[5] (IN)
+                         net (fo=0)                   0.000     0.000    A[5]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[5]_inst/O
+                         net (fo=22, unplaced)        0.231     0.406    M3/LUT6_2_inst0/I3
+                         LUT6 (Prop_lut6_I3_O)        0.028     0.434 r  M3/LUT6_2_inst0/LUT6/O
+                         net (fo=2, unplaced)         0.183     0.618    adder0/genPG[5].PGi/I2
+                         LUT6 (Prop_lut6_I2_O)        0.028     0.646 r  adder0/genPG[5].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.646    adder0/genPG[5].PGi__0
+                         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.047     0.693 r  adder0/genCC[1].CCi/O[1]
+                         net (fo=1, unplaced)         0.231     0.924    R_OBUF[9]
+                         OBUF (Prop_obuf_I_O)         1.213     2.137 r  R_OBUF[9]_inst/O
+                         net (fo=0)                   0.000     2.137    R[9]
+                                                                      r  R[9] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.137    
+  -------------------------------------------------------------------
+                         slack                                  2.112    
+
+Slack (MET) :             2.113ns  (arrival time - required time)
+  Source:                 A[6]
+                            (input port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            R[10]
+                            (output port clocked by a  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             a
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (a rise@0.000ns - a rise@0.000ns)
+  Data Path Delay:        2.138ns  (logic 1.492ns (69.778%)  route 0.646ns (30.222%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+                                                      0.000     0.000 r  A[6] (IN)
+                         net (fo=0)                   0.000     0.000    A[6]
+                         IBUF (Prop_ibuf_I_O)         0.175     0.175 r  A_IBUF[6]_inst/O
+                         net (fo=18, unplaced)        0.231     0.406    M3/LUT6_2_inst1/I5
+                         LUT6 (Prop_lut6_I5_O)        0.028     0.434 r  M3/LUT6_2_inst1/LUT6/O
+                         net (fo=2, unplaced)         0.183     0.618    adder0/genPG[6].PGi/I2
+                         LUT6 (Prop_lut6_I2_O)        0.028     0.646 r  adder0/genPG[6].PGi/LUT6/O
+                         net (fo=1, unplaced)         0.000     0.646    adder0/genPG[6].PGi__0
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.047     0.693 r  adder0/genCC[1].CCi/O[2]
+                         net (fo=1, unplaced)         0.231     0.924    R_OBUF[10]
+                         OBUF (Prop_obuf_I_O)         1.214     2.138 r  R_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     2.138    R[10]
+                                                                      r  R[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock a rise edge)          0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.000     0.025    
+  -------------------------------------------------------------------
+                         required time                         -0.025    
+                         arrival time                           2.138    
+  -------------------------------------------------------------------
+                         slack                                  2.113    
+
+
+
+
+
+
