@@ -43,7 +43,6 @@ module tb_4x4(
          #1
          if (r < i * j)
           begin
-          $display ("A = %d,B = %d,r = %d,i*j = %d,ED = %d",i,j,r,i*j,i*j-r);
            ErrorCounter =  ErrorCounter + 1'b1; //Error Occurrences
            ErrorDistance = ErrorDistance + (i * j - r);//Error Distance
            if ((i * j - r) > MaxError)//MaxError
@@ -55,7 +54,6 @@ module tb_4x4(
           
           else if(r > i * j)
           begin
-          $display ("A = %d,B = %d,r = %d,i*j = %d,ED = %d***",i,j,r,i*j,r-i*j);
            ErrorCounter = ErrorCounter + 1'b1; 
            ErrorDistance = ErrorDistance + (r - i * j);
            if ((r - i * j) > MaxError)
@@ -67,6 +65,6 @@ module tb_4x4(
         end
       end
     end
-
+ // Due to verilog cannot display decimals, the real result of RED is calcuated as RED/10000.
   N1_4x4_mul M0(.A(A),.B(B),.R(r));
 endmodule
