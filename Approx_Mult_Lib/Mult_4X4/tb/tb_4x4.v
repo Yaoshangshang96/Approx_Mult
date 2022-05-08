@@ -67,6 +67,6 @@ module tb_4x4(
         end
       end
     end
-  // mult_approx_o4 M0(.a(A),.b(B),.prod(r));
+
   N1_4x4_mul M0(.A(A),.B(B),.R(r));
 endmodule
