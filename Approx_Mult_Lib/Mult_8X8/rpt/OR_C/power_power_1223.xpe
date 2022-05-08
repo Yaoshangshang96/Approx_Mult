@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2018.3" design="Mult_8x8_orc_1223" designState="synthesized" date="Wed Apr 20 00:03:54 2022" pwrOpt="None" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7vx980t" grade="extended" package="ffg1930" speed="-2L" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vcco18" voltage="1.800000" icc="0.003046" iccq="0.001000" power="0.007283">
+			</SOURCE>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.000000" iccq="0.004416" power="0.004416">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="0.000422" iccq="0.215470" power="0.215892">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.000522" iccq="0.060598" power="0.110016">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000000" iccq="0.020000" power="0.036000">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="medium (Medium Profile)">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="12to15 (12 to 15 Layers)">
+			</BOARDLAYERS>
+			<TSA value="1.200000">
+			</TSA>
+			<TJB value="1.800000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="25.3 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="25.173482" toggleRate2="15.341938" totalRate="217.712996" name="a" hierName="Mult_8x8_orc_1223/M0" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="14" extNets="0" luts="7" logicCap="7248500" signalCap="0.000000" power="0.000046" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="37.501592" toggleRate2="17.693333" totalRate="464.100559" name="a" hierName="Mult_8x8_orc_1223/M1" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="25" extNets="0" carry4s="1" luts="10" logicCap="10410000" signalCap="0.000000" power="0.000068" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="37.501592" toggleRate2="17.693333" totalRate="464.100559" name="a" hierName="Mult_8x8_orc_1223/M2" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="25" extNets="0" carry4s="1" luts="10" logicCap="10410000" signalCap="0.000000" power="0.000068" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="37.109877" toggleRate2="18.062559" totalRate="512.212691" name="a" hierName="Mult_8x8_orc_1223/M3" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="27" extNets="0" carry4s="1" luts="11" logicCap="11445500" signalCap="0.000000" power="0.000076" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="48.009689" toggleRate2="22.673389" totalRate="434.046741" name="a" hierName="Mult_8x8_orc_1223/adder0" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="16" extNets="0" luts="8" logicCap="8284000" signalCap="0.000000" power="0.000099" sp="0.000000">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IO">
+				<MODULE name="A&lt;0:7&gt;" count="8">
+					<GROUPSUMMARY>
+						<IO name="A&lt;0:7&gt;" clock="a" clockFreq="100.000001" ioStandard="LVCMOS18" bidis="0" inputs="8" outputs="0" signalRate="12.500000" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000032" vccAux="0.000000" vcco="0.000024" vccoCurrent="0.000013" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="B&lt;0:7&gt;" count="8">
+					<GROUPSUMMARY>
+						<IO name="B&lt;0:7&gt;" clock="a" clockFreq="100.000001" ioStandard="LVCMOS18" bidis="0" inputs="8" outputs="0" signalRate="12.500000" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000032" vccAux="0.000000" vcco="0.000024" vccoCurrent="0.000013" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="R&lt;0:15&gt;" count="16">
+					<GROUPSUMMARY>
+						<IO name="R&lt;0:15&gt;" clock="a" clockFreq="100.000001" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="16" signalRate="20.969235" toggleRate="20.969235" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000000" vccAux="0.000939" vcco="0.005435" vccoCurrent="0.003020" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="0" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+
