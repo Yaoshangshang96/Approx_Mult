@@ -82,8 +82,7 @@ output [7:0]R
    );
    
    LUT6_2 #(
-      .INIT(64'hDFFF_F888_F888_7888) //DFFF .. 7888
-      //.INIT(64'hFFFF_F888_F888_F888)
+      .INIT(64'hDFFF_F888_F888_7888) 
    ) LUT6_2_inst5 (
       .O6(P4), 
       .O5(), 
@@ -97,7 +96,6 @@ output [7:0]R
    
     LUT6_2 #(
       .INIT(64'hEFFF_F080_F000_F000) 
-      //.INIT(64'hFFFF_F080_F000_F000)
    ) LUT6_2_inst7 (
       .O6(P5), 
       .O5(), 
